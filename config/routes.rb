@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :portfolios
-  get 'pages/home'
-  get 'pages/about'
-  get 'pages/contact'
+  get 'about', to: 'pages#about'
+  # you can pass anything after the CRUD action, this is customization
+  get 'contact', to: 'pages#contact'
   resources :blogs
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'pages#home' #this sets the opening route to pages home in controller
 end
