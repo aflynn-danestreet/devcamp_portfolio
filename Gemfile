@@ -65,4 +65,4 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.2'
 gem 'ostruct'
 gem 'bootstrap', '~> 4.0.0-alpha.6'
-
+gem 'petergate', '~> 2.0', '>= 2.0.1'
