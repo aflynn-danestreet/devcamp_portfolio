@@ -1,0 +1,7 @@
+<% if flash[:alert] %>
+  <%= js add_gritter("This is a notification just for you!", title: "params alert!", sticky: false, timeout: 3000) %>
+<% elsif flash[:error] %>
+  <%= js add_gritter("This is a notification just for you!", title: "params error!", sticky: false, timeout: 3000) %>
+<% elsif flash[:notice] %>
+  <%= js add_gritter("This is a notification just for you!", title: "params notice!", sticky: false, timeout: 3000) %>
+<% end %>
